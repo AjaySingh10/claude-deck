@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+  <!-- Stacked card edges -->
+  <rect x="0" y="19" width="24" height="3" rx="1.5" opacity="0.35"/>
+  <rect x="0" y="15" width="24" height="3" rx="1.5" opacity="0.6"/>
+  <!-- Top card filled -->
+  <rect x="0" y="1" width="24" height="13" rx="2.5" opacity="0.25"/>
+  <rect x="0" y="1" width="24" height="13" rx="2.5" fill="none" stroke="currentColor" stroke-width="2"/>
+  <!-- Claude asterisk — bigger -->
+  <g transform="translate(12,7.5)">
+    <ellipse cx="0" cy="0" rx="1.4" ry="5.2" transform="rotate(0)"/>
+    <ellipse cx="0" cy="0" rx="1.4" ry="5.2" transform="rotate(60)"/>
+    <ellipse cx="0" cy="0" rx="1.4" ry="5.2" transform="rotate(120)"/>
+    <circle cx="0" cy="0" r="1.8"/>
+  </g>
+</svg>

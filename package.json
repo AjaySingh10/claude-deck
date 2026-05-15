@@ -1,0 +1,74 @@
+{
+  "name": "claude-deck",
+  "displayName": "Claude Deck",
+  "description": "Your Claude Code command center - manage Skills, MCP servers, Hooks, and Memory from one place",
+  "version": "1.0.0",
+  "publisher": "claude-deck",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/claude-deck/claude-deck"
+  },
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "AI",
+    "Other"
+  ],
+  "keywords": [
+    "claude",
+    "claude-code",
+    "anthropic",
+    "mcp",
+    "skills",
+    "hooks",
+    "ai",
+    "llm"
+  ],
+  "activationEvents": [
+    "onCommand:claude-deck.openTab"
+  ],
+  "main": "./dist/extension.js",
+  "icon": "media/icon.png",
+  "contributes": {
+    "commands": [
+      {
+        "command": "claude-deck.open",
+        "title": "Claude Deck",
+        "category": "Claude",
+        "icon": "$(library)"
+      }
+    ],
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "claude-deck",
+          "title": "Claude Deck",
+          "icon": "media/activitybar.svg"
+        }
+      ]
+    },
+    "views": {
+      "claude-deck": [
+        {
+          "type": "webview",
+          "id": "claude-deck.mainView",
+          "name": "Claude Deck"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "build": "node esbuild.js",
+    "watch": "node esbuild.js --watch",
+    "package": "npm run build && vsce package --no-dependencies",
+    "vscode:prepublish": "npm run build"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/vscode": "^1.85.0",
+    "esbuild": "^0.20.0",
+    "typescript": "^5.3.0"
+  }
+}
