@@ -45,6 +45,22 @@ export class SkillsSidebarProvider implements vscode.WebviewViewProvider {
     push();
     const interval = setInterval(push, 5000);
     view.onDidDispose(() => clearInterval(interval));
+
+    // Open the full panel whenever the user clicks the activity bar icon to show the sidebar.
+    // onDidChangeVisibility fires on user-triggered show/hide; resolveWebviewView fires only
+    // on first creation (including startup restore), so we handle both cases separately.
+    view.onDidChangeVisibility(() => {
+      if (view.visible) {
+        vscode.commands.executeCommand('claude-deck.open');
+      }
+    });
+
+    // First-time creation: if the view is immediately visible the user just clicked the icon.
+    // VS Code startup restores the view with visible=true too, but that's acceptable for a
+    // productivity panel that users expect to be front-and-center.
+    if (view.visible) {
+      vscode.commands.executeCommand('claude-deck.open');
+    }
   }
 }
 

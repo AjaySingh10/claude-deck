@@ -2,7 +2,7 @@
   "name": "claude-deck",
   "displayName": "Claude Deck",
   "description": "Supercharge Claude Code in one click - install Skills, MCP servers, Hooks, and manage Memory without touching a config file.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "publisher": "Ajax1029",
   "license": "MIT",
   "repository": {

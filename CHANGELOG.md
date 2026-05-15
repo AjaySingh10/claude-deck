@@ -1,5 +1,10 @@
 # Changelog
 
+## [1.1.0]
+
+### Fixed
+- Activity bar icon now opens the full panel immediately on click
+
 ## [1.0.0]
 
 ### Added
