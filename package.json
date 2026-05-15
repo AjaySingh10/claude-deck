@@ -1,14 +1,18 @@
 {
   "name": "claude-deck",
   "displayName": "Claude Deck",
-  "description": "Your Claude Code command center - manage Skills, MCP servers, Hooks, and Memory from one place",
+  "description": "Supercharge Claude Code in one click - install Skills, MCP servers, Hooks, and manage Memory without touching a config file.",
   "version": "1.0.0",
-  "publisher": "claude-deck",
+  "publisher": "Ajax1029",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/claude-deck/claude-deck"
+    "url": "https://github.com/AjaySingh10/claude-deck"
   },
+  "bugs": {
+    "url": "https://github.com/AjaySingh10/claude-deck/issues"
+  },
+  "homepage": "https://github.com/AjaySingh10/claude-deck#readme",
   "engines": {
     "vscode": "^1.85.0"
   },
@@ -24,7 +28,19 @@
     "skills",
     "hooks",
     "ai",
-    "llm"
+    "llm",
+    "skills-manager",
+    "model-context-protocol",
+    "slash-commands",
+    "ai-assistant",
+    "copilot-alternative",
+    "claude-ai",
+    "agent",
+    "automation",
+    "productivity",
+    "workflow",
+    "memory",
+    "code-assistant"
   ],
   "activationEvents": [
     "onCommand:claude-deck.openTab"
